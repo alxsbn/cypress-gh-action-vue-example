@@ -14,5 +14,10 @@ jobs:
           config_file: cypress.json
           spec: "tests/e2e/**/*"
           config: baseUrl=http://localhost:8080/
+      - uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos  
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
