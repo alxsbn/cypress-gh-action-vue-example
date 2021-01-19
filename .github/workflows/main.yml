@@ -14,3 +14,5 @@ jobs:
           config_file: cypress.json
           spec: "tests/e2e/**/*"
           config: baseUrl=http://localhost:8080/
+    env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
