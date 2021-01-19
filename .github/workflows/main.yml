@@ -14,6 +14,7 @@ jobs:
           config_file: cypress.json
           spec: "tests/e2e/**/*"
           config: baseUrl=http://localhost:8080/
+          record: true  
       - uses: actions/upload-artifact@v1
         if: always()
         with:
