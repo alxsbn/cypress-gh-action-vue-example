@@ -13,5 +13,4 @@ jobs:
           wait-on: http://localhost:8080/
           config_file: cypress.json
           spec: "tests/e2e/**/*"
-        with:
-          config: baseUrl: http://localhost:8080/
+          config: baseUrl=http://localhost:8080/
